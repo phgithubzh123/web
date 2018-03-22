@@ -1,0 +1,547 @@
+/*public*/
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: none;
+    font: 14px "微软雅黑";
+}
+
+img {
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+input, select, textarea {
+    resize: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    background: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/*clear float*/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*topBar*/
+.topBar {
+    height: 32px;
+    width: 100%;
+    background-color: #e3e4e5;
+    position: relative;
+}
+
+.topBar_Gadgets {
+    height: 32px;
+    width: 1210px;
+    margin: 0 auto;
+    line-height: 32px;
+}
+
+.topBar_left {
+    position: relative;
+}
+
+.topBar_left li {
+    float: left;
+    padding-right: 20px;
+    text-indent: 20px;
+    padding-left: 10px;
+}
+
+.icon1 {
+    background: url("icons/icon1.png") left center no-repeat;
+}
+
+.icon1 a:hover {
+    color: #F30213;
+}
+
+.icon2 {
+    height: 18px;
+    width: 18px;
+    display: block;
+    background: url("icons/icon2.png") left center no-repeat;
+    position: absolute;
+    top: 6px;
+}
+
+.select {
+    width: 48px;
+    height: 32px;
+    text-align: center;
+}
+
+/*.select:hover{background-color: #ffffff;}*/
+.icon3 {
+    background: url("icons/icon3.png") right center no-repeat;
+}
+
+.topBar_right li {
+    float: left;
+    padding-right: 18px;
+}
+
+.topBar_left a {
+    color: #999;
+}
+
+.topBar_right a {
+    color: #999;
+}
+
+.topBar_right a:hover {
+    color: #F30213;
+}
+
+.toRed a {
+    color: #F30213;
+}
+
+/*topBar_left box*/
+.topBar_left_iteam {
+    width: 312px;
+    height: 218px;
+    background-color: #fff;
+    float: left;
+    position: absolute;
+    z-index: 555;
+    left: 105px;
+    top: 35px;
+    border-left: 1px solid #e3e4e5;
+    border-bottom: 1px solid #e3e4e5;
+    border-right: 1px solid #e3e4e5;
+}
+
+/*.topBar_left_iteam li{float: left; margin: 8px; padding-top: 6px;}*/
+.topBar_left_iteam a {
+    color: #999;
+}
+
+/*logoBar*/
+.logoBar {
+    height: 95px;
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.logo img {
+    float: left;
+}
+
+.logo p {
+    float: left;
+    line-height: 95px;
+    font-size: 22px;
+    padding-right: 190px;
+}
+
+.search {
+    width: 455px;
+    height: 36px;
+    background-color: #5e5e5e;
+    margin-top: 25px;
+    margin-left: -36px;
+    margin-right: 20px;
+}
+
+.sear {
+    float: left;
+    height: 30px;
+    width: 372px;
+    border-left: 3px solid #F30213;
+    border-bottom: 3px solid #F30213;
+    border-top: 3px solid #F30213;
+    background-color: #ffffff;
+}
+
+.btn {
+    float: left;
+    height: 36px;
+    width: 80px;
+    background-color: #F30213;
+}
+
+.shopping {
+    width: 138px;
+    height: 34px;
+    background-color: #f9f9f9;
+    margin-top: 25px;
+    text-align: center;
+    border: 1px solid #999
+}
+
+.shopping p {
+    padding-top: 8px;
+    color: #F30213;
+    float: left;
+    padding-left: 20px;
+}
+
+.shopping i {
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    background: url("icons/icon_shopping.png") left center no-repeat;
+    float: left;
+    padding-top: 15px;
+}
+
+/*navBar*/
+.navBar {
+    clear: both;
+    width: 1210px;
+    height: 34px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+}
+
+.navBar_left {
+    width: 210px;
+    height: 35px;
+    background-color: #c91623;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navBar_right {
+    width: 1000px;
+    height: 35px;
+    float: left;
+    position: absolute;
+    left: 210px;
+    top: 0;
+}
+
+.navBar_left p {
+    color: #e3e4e5;
+    line-height: 34px;
+}
+
+.navBar_left i {
+    height: 33px;
+    width: 34px;
+    display: inline-block;
+    float: left;
+    background: url("images/select.png") left center no-repeat;
+}
+
+.navBar_right li {
+    float: left;
+    padding: 0 25px;
+    line-height: 34px;
+}
+
+.navBar_right a {
+    color: #000000;
+}
+
+.navBar_right a:hover {
+    color: #c91623;
+}
+
+/*选择下拉框*/
+.shopList_item {
+    width: 210px;
+    height: 100%;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+
+.box_text {
+    width: 210px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.box_text p {
+    padding-left: 20px;
+    float: left;
+    padding-right: 100px;
+    background: url("icons/jt.png") right center no-repeat;
+}
+
+.box_text a {
+    color: #000000;
+}
+
+.box_text {
+    background-color: #f1f1f1;
+}
+
+.box_text:hover {
+    background-color: #ffffff;
+}
+
+/*shopList_text*/
+.shopList_text {
+    height: 430px;
+    width: 999px;
+    position: absolute;
+    top: 35px;
+    left: 210px;
+    border-right: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.text_left {
+    width: 785px;
+    height: 420px;
+    overflow: hidden;
+    float: left;
+}
+
+.text {
+    padding: 0 20px;
+}
+
+.text_cont {
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+}
+
+.text_cont dt {
+    font-weight: bold;
+    height: 24px;
+}
+
+.text_cont dd {
+    padding-left: 85px;
+    line-height: 24px;
+    margin-top: -24px;
+}
+
+.text_cont dd a {
+    margin-right: 15px;
+    color: #000;
+}
+
+.text_cont dd a:hover {
+    color: #c91623;
+}
+
+.text_right {
+    padding: 10px;
+}
+
+/*计时器Countdown*/
+.Countdown {
+    position: absolute;
+    top: 470px;
+    left: 0;
+    height: 80px;
+    width: 1210px;
+    background-color: #f2ece7;
+    line-height: 80px;
+}
+
+.Countdown i {
+    float: left;
+    background: url("icons/watch.png") left center no-repeat;
+    padding: 45px 15px 0 15px;
+    margin-left: 15px;
+}
+
+.Countdown h2 {
+    float: left;
+    margin-right: 30px;
+}
+
+.Countdown span {
+    float: left;
+    padding-right: 20px;
+}
+
+.Countdown img {
+    margin-top: 20px;
+    float: left;
+    padding-right: 5px;
+    width: 27px;
+    height: 35px;
+}
+
+/*Scroll_img*/
+.Scroll_img {
+    position: relative;
+    left: 0;
+    top: 515px;
+    width: 1210px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.Scroll_box {
+    width: 1010px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Scroll_box ul {
+    width: 1010px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Scroll_box ul li {
+    float: left;
+    width: 198px;
+    height: 250px;
+    border-left: 2px solid #f2ece7;
+}
+
+.Scroll_box img {
+    width: 105px;
+    height: 105px;
+    float: left;
+    padding: 25px 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.Scroll_box img:hover {
+    width: 105px;
+    height: 105px;
+    float: left;
+    padding: 25px 50px;
+    position: relative;
+    top: -5px;
+    left: 0;
+}
+
+.Introduced span {
+    float: left;
+}
+
+.Introduced span:hover {
+    color: #c91623;
+}
+
+.Introduced h3 {
+    float: left;
+    padding-left: 15px;
+    padding-top: 20px;
+    color: #c91623;
+}
+
+.Introduced s {
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.right_img img {
+    width: 198px;
+    height: 250px;
+    border-left: 2px #f2ece7;
+}
+
+/*News_information*/
+.News_information {
+    height: 65px;
+    width: 1210px;
+    background-color: #f2ece7;
+    position: absolute;
+    top: 250px;
+    left: 0;
+}
+
+.News_information h2 {
+    float: left;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.News_information p {
+    float: left;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+/*News_pictures*/
+.News_pictures {
+    height: 480px;
+    width: 1210px;
+    position: absolute;
+    top: 315px;
+    left: 0;
+    padding-right: 10px;
+}
+
+.pictures_left {
+    float: left;
+    width: 420px;
+    height: 480px;
+    padding-right: 10px;
+}
+
+.pictures_left img {
+    width: 420px;
+    height: 480px;
+}
+
+.pictures_middr {
+    float: left;
+    width: 530px;
+    height: 480px;
+}
+
+.pictures_middr img {
+    width: 250px;
+    height: 250px;
+    padding-right: 10px;
+}
+
+.pictures_right {
+    float: left;
+    width: 250px;
+    height: 480px;
+}
+
+.pictures_right img {
+    width: 250px;
+    height: 480px;
+}
